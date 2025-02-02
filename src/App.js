@@ -21,7 +21,7 @@ function App() {
       {message && <p>{message}</p>}
       {
         !loginMessage && (<form onSubmit={handleLogin} style={{display:"flex",flexDirection:"column", width:"300px",alignItems:"center"}}>
-        <label for="username">UserName:</label>
+        <label for="username">Username:</label>
         <input type="text" required placeholder="username" id="username" value={username}
           onChange={(e) => setUsername(e.target.value)}/>
         <label for="password">Password:</label>
